@@ -73,11 +73,6 @@ def validate():
         return render_template('home.html', username=username_add, email=email_add, username_error=username_error, 
             password_error=password_error, verify_error=verify_error, email_error=email_error)
  
-# @app.route("/welcome", methods=['get'])
-# def welcome():
-#     username = request.form['username']
-#     return render_template('welcome.html', username=username)
-
 
 @app.route("/")
 def index():
